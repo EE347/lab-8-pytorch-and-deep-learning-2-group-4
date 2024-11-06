@@ -18,9 +18,9 @@ def create_save_directories():
 def generate_filename(file_type='image'):
     timestamp = time.strftime("%Y%m%d_%H%M%S")
     if file_type == 'image':
-        return f'captures/images/image_{timestamp}.jpg'
+        return f'/home/pi/ee347/lab8/captures/images/image_{timestamp}.jpg'
     elif file_type == 'video':
-        return f'captures/videos/video_{timestamp}.avi'
+        return f'/home/pi/ee347/lab8/captures/videos/video_{timestamp}.avi'
 
 # Initialize Picamera2 for the Raspberry Pi Camera Module 2
 picam2 = Picamera2()
